@@ -62,7 +62,7 @@ const echo = action(async (message: string) => {
 });
 
 export function MyComponent() {
-  const myEcho = useAction(echo);
+  const myEcho = useAction(echo("hello"));
 
   myEcho("Hello from Solid!");
 }
